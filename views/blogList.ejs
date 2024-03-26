@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog List</title>
+<link rel="stylesheet" href="/stylesheets/style.css">
+<!-- Include Font Awesome for icons (If you're using it) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/" class="nav-item">My Blog</a>
+      <a href="/blogList" class="nav-item active">List Blogs</a>
+      <a href="/blogAdd" class="nav-item">Add Blog</a>
+    </nav>
+  </header>
+  <main>
+    <div class="blogList-title">
+      <h1>Blog List</h1>
+    </div>
+    <div class="blogList-container">
+      <% if (blogs && blogs.length > 0) { %>
+        <% blogs.forEach(function(blog) { %>
+          <div class="blog-entry">
+            <div class="blog-entry-header">
+              <h2><%= blog.title %></h2>
+              <div class="blog-entry-actions">
+                <a href="/edit/<%= blog._id %>" class="edit-btn"><i class="fas fa-edit"></i></a>
+                <a href="/delete/<%= blog._id %>" class="delete-btn"><i class="fas fa-trash"></i></a>
+              </div>
+            </div>
+            <p class="blog-entry-content"><%= blog.content %></p>
+            <p class="blog-entry-date">Posted on <%= blog.modifiedDate.toDateString() %></p>
+          </div>
+        <% }); %>
+      <% } else { %>
+        <p>No blog posts to display.</p>
+      <% } %>
+    </div>
+  </main>
+</body>
+</html>

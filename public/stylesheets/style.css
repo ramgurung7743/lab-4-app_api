@@ -1,0 +1,186 @@
+/* Homepage specific styles */
+.homepage-container {
+  text-align: center; /* Center-align all content */
+  padding: 50px 20px; /* Add some padding around */
+}
+
+.homepage-content {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block; /* Only take as much space as needed */
+  margin: auto;
+}
+
+.homepage-container h1 {
+  font-size: 2.5em; /* Big title */
+  color: #333; /* Dark grey color */
+  margin-bottom: 10px;
+}
+
+.homepage-container p {
+  font-size: 1.2em; /* Slightly larger text */
+  margin-bottom: 30px;
+}
+
+#viewBlogs {
+  background-color: #17a2b8; /* A nice blue-ish tone */
+  width: auto;
+  position: left;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#viewBlogs:hover {
+  background-color: #138496; /* Darker shade for hover state */
+}
+
+/* Add Blog specific styles */* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #007bff;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.nav-item.active {
+  background-color: #0056b3;
+  border-radius: 5px;
+}
+
+.form-container {
+  background-color: #fff;
+  width: 50%;
+  margin: 40px auto;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .form-container {
+    width: 80%;
+  }
+}
+
+/* Blog list specific styles */
+.blog-list-container {
+  width: 60%; /* Adjust the width as per your layout needs */
+  margin: 20px auto;
+}
+
+.blog-entry {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+
+.blog-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.blog-entry-header h2 {
+  font-size: 1.5em; /* Adjust as needed for your design */
+  color: #333; /* Title color */
+}
+
+.blog-entry-content {
+  margin-bottom: 10px;
+  color: #333; /* Content text color */
+}
+
+.blog-entry-date {
+  color: #777;
+  font-size: 0.9em;
+}
+
+.edit-btn, .delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-btn {
+  color: #007bff;
+}
+
+.delete-btn {
+  color: #ff6347;
+}
+
+/* You may use Font Awesome or similar for icons */
+.edit-btn i, .delete-btn i {
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  /* Responsive adjustments as needed */
+  .blog-list-container {
+    width: 95%;
+  }
+}
